@@ -1,0 +1,252 @@
+/* 1. Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Replace with your image name */
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("./Gemini_Generated_Image_kpqjyvkpqjyvkpqj (1).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Stops scrolling */
+    animation: fadeIn 1.2s ease;
+     animation: smoothPage 1.8s ease;
+}
+.l{
+   /* Replace with your image name */
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Gemini_Generated_Image_6dz3dv6dz3dv6dz3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Stops scrolling */  
+    animation: fadeIn 1.2s ease;
+     animation: smoothPage 1.8s ease;
+}
+.ll{
+     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Gemini_Generated_Image_4b1s1a4b1s1a4b1s.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Stops scrolling */  
+    animation: fadeIn 1.2s ease;
+    animation: smoothPage 1.8s ease;
+}
+.lll{
+     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Gemini_Generated_Image_43m36j43m36j43m3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Stops scrolling */  
+    animation: fadeIn 1.2s ease;
+    animation: smoothPage 1.8s ease;
+}
+
+/* 2. Top Navigation */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.nav-bar {
+    background: rgba(255, 255, 255, 0.1); /* Transparent White */
+    backdrop-filter: blur(15px); /* The "Glass" Effect */
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: lowercase;
+    opacity: 0.7;
+    transition: 0.3s;
+     text-transform: uppercase;
+}
+
+.nav-bar a:hover {
+    opacity: 1;
+}
+
+.menu-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background: white;
+    margin: 6px 0;
+}
+
+/* 3. Main Text Area */
+.hero-content {
+    margin-top: 100px;
+    padding-left: 60px;
+}
+
+.numbering {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.numbering span {
+    opacity: 0.4;
+    font-size: 18px;
+}
+
+.main-title {
+    font-size: 110px;
+    line-height: 0.9;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.info-badge {
+    background: black;
+    padding: 15px 25px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.info-badge h6 {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* 4. Bottom Stats Bar */
+.stats-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Darker Glass */
+    backdrop-filter: blur(25px);
+    display: flex;
+    padding: 50px 100px;
+    min-width: 50%;
+    justify-content: space-around;
+    border-top-left-radius: 30px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.stat-box p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+@keyframes smoothPage {
+
+    from{
+        opacity: 0;
+        transform: scale(1.08);
+        filter: blur(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+
+}/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .header-nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-bar {
+        padding: 10px 15px;
+        border-radius: 20px;
+    }
+
+    .nav-bar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 50px;
+    }
+
+    .numbering {
+        font-size: 18px;
+    }
+
+    .info-badge {
+        margin: 20px auto;
+        display: block;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 0;
+    }
+
+    .stat-box h2 {
+        font-size: 24px;
+    }
+}
